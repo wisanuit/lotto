@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="google-site-verification" content="ebj3si8Lz3deYaySNuYwqttgTFQnapdNxVZL87fQCCc">
+        <link rel="stylesheet" type="text/css" href="css/glyphicon.css">
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/swiper.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WFP7JFR"></script><script>
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer', 'GTM-WFP7JFR');
+        </script>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="javascripts/jquery.min.js"></script>
+        <script src="javascripts/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- Swiper -->
+  <div>
+        <div class="loading-bg" style="display: none;">
+            <div class="loader"></div>
+        </div>
+        <div>
+            <div class="el-dialog__wrapper" style="z-index: 2001; display: none;">
+                <div role="dialog" aria-modal="true" aria-label="dialog" class="el-dialog dialog-lg">
+                    <div class="el-dialog__header"><span class="el-dialog__title"></span>
+                        <!---->
+                    </div>
+                    <div class="el-dialog__body">
+                        <div class="loading-bg" style="display: none;">
+                            <div class="loader"></div>
+                        </div>
+                        <div class="close-wrapper">
+                            <button type="button" class="style01-close" data-dismiss="modal"></button>
+                        </div>
+                        <!---->
+                    </div>
+                    <!---->
+                </div>
+            </div>
+            <div class="el-dialog__wrapper" append-to-body="append-to-body" style="display: none;">
+                <div role="dialog" aria-modal="true" aria-label="dialog" class="el-dialog">
+                    <div class="el-dialog__header"><span class="el-dialog__title"></span>
+                        <!---->
+                    </div>
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="myLogin" role="dialog">
+                <div class="modal-dialog">
+                        <div class="el-dialog__body">
+                                <div class="loading-bg" style="display: none;">
+                                    <div class="loader"></div>
+                                </div>
+                                <div class="close-wrapper">
+                                    <button type="button" class="style01-close" data-dismiss="modal"></button>
+                                </div>
+                                <div class="popup-style01">
+                                    <div class="popup-style01-bg">
+                                        <div class="popup-login-block">
+                                            <div>
+                                                <div class="header-title">
+                                                    <h1>ล็อคอิน</h1></div>
+                                                <!---->
+                                                <!---->
+                                            </div>
+                                            <div>
+                                                <form name="loginform" novalidate="novalidate">
+                                                    <div class="user-symbol">
+                                                        <div>
+                                                            <div class="form-group">
+                                                                <h4>ยูสเซอร์<!----><div class="plus-button" style="display: none;">＋</div></h4>
+                                                                <div class="input-block">
+                                                                    <div class="input-group">
+                                                                        <!---->
+                                                                        <input name="username" maxlength="16" class="form-input" aria-required="true" aria-invalid="false">
+                                                                        <!---->
+                                                                    </div>
+                                                                    <div>
+                                                                        <div>
+                                                                            <div class="poperrorMsg" style="display: none;">ต้องการไอดี</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!---->
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="form-group" style="display: none;">
+                                                                <h4>อีเมล<!----><div class="plus-button" style="display: none;">＋</div></h4>
+                                                                <div class="input-block">
+                                                                    <div class="input-group">
+                                                                        <!---->
+                                                                        <input name="email" disabled="disabled" maxlength="100" class="form-input" aria-required="true" aria-invalid="false">
+                                                                        <!---->
+                                                                    </div>
+                                                                    <div>
+                                                                        <div>
+                                                                            <div class="poperrorMsg" style="display: none;">ต้องการอีเมล์</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!---->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-group">
+                                                            <h4>รหัสผ่าน<!----><div class="plus-button" style="display: none;">＋</div></h4>
+                                                            <div class="input-block">
+                                                                <div class="input-group">
+                                                                    <!---->
+                                                                    <input name="pwd" maxlength="12" class="form-input" aria-required="true" aria-invalid="false" type="password">
+                                                                    <!---->
+                                                                </div>
+                                                                <div>
+                                                                    <div>
+                                                                        <div class="poperrorMsg" style="display: none;">ต้องการรหัสผ่าน</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!---->
+                                                        </div>
+                                                    </div>
+                                                    <div class="qrcode-box">
+                                                        <div>
+                                                            <div class="form-group">
+                                                                <h4>รหัสยืนยัน<!----><div class="plus-button" style="display: none;">＋</div></h4>
+                                                                <div class="input-block">
+                                                                    <div class="input-group">
+                                                                        <!---->
+                                                                        <input name="captcha" maxlength="4" class="form-input" aria-required="true" aria-invalid="false" type="tel" placeholder="กรุณาใส่รหัสยืนยัน">
+                                                                        <div class="input-addon checknum_img">
+                                                                            <div><img src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAeCAMAAADthUvBAAAAGFBMVEXp6enyBw4AAAAAAAAAAAAAAAAAAAAAAAAvCd45AAAACHRSTlP//wAAAAAAAAOaHncAAAvhSURBVHjaAdYLKfQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEBAQEBAQEAAAAAAAAAAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEBAQEBAQEBAQAAAAAAAAEBAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAAAAAAAAAAAAAAAAAAABAQEBAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAEBAQEAAAEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAQEBAQEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAAAAAAAAAAAAQEBAQAAAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQAAAAAAAAAAAAABAQEBAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEAAAAAAAAAAAAAAAAAAAABAQEBAAABAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEBAAAAAAAAAAAAAQEBAAAAAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAAEBAQEBAAAAAAAAAAAAAAEBAQEAAAEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEBAQEAAAAAAAAAAAABAQEAAAABAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQEBAQEBAQAAAAAAAAAAAQEBAQAAAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQEBAQAAAAAAAAAAAAEBAQAAAAEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEAAAAAAAEBAAAAAAAAAAABAQEBAAABAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEBAAAAAAAAAAAAAQEBAAAAAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAEBAQEAAAEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEAAAAAAAAAAAABAQEAAAABAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAQEBAQEBAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQAAAAAAAAAAAAEBAQAAAAEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQAAAAAAAAAAAQEBAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEBAAAAAAAAAAAAAQEBAAAAAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAAAAAEBAAAAAAAAAAAAAQEBAAEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEAAAAAAAAAAAABAQEAAAABAQEBAAAAAAAAAAAAAAAAAAAAAAAAAQEBAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQAAAAAAAAAAAAEBAQAAAAEBAQEAAAAAAAAAAAAAAAAAAAAAAAABAQEBAAAAAAABAQEBAAAAAAAAAAABAQEBAAABAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEBAAAAAAAAAAAAAQEBAAAAAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAABAQEBAQEBAQEBAAAAAAAAAAAAAAEBAQEAAAEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEAAAAAAAAAAAABAQEAAAABAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQEBAAAAAAAAAAAAAAAAAQEBAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQAAAAAAAAAAAAEBAQAAAAEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEBAAAAAAAAAAAAAQEBAAAAAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEAAAAAAAAAAAAAAQEBAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQAAAAAAAAAAAAABAQEBAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEBAAAAAAAAAAAAAAABAQEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACj4gHI+sf2oAAAAABJRU5ErkJggg=="></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div>
+                                                                            <div class="poperrorMsg" style="display: none;">ต้องการรหัสยืนยัน</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!---->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <div class="newsList">
+                                                    <ul>
+                                                        <li class="newsItem">
+                                                            <div>* ประกาศ สำคัญ *
+                                                                <br>
+                                                                <br> ธนาคาร SCB และ KTB จะปิดปรับปรุงระบบทุกวันในเวลา 22.50 - 02.10
+                                                                <br>
+                                                                <br> ขอให้ท่านหลีกเลี่ยงในการทำรายการฝากในช่วงเวลาดังกล่าว
+                                                                <br>
+                                                                <br> กรณีที่ท่านทำรายการมาในช่วงเวลาดังกล่าว ระบบจะทำการเติมเงินให้ท่านตามลำดับในเวลา 03.00 เป็นต้นไป</div>
+                                                        </li>
+                                                        <li class="newsItem">
+                                                            <div>ยินดีต้อนรับสู่ Spbet99</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input id="rememberMe" name="rememberMe" type="checkbox" data-remember="false">
+                                                            <div class="check-text">จำฉันไว้</div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="submitbtn-wrap">
+                                                    <button type="button" title="เข้าสู่ระบบ" class="popup-login-btn"><span>เข้าสู่ระบบ</span></button>
+                                                    <button type="button" title="ดาวน์โหลด APP" class="popup-app-btn"><span>ดาวน์โหลด APP</span></button>
+                                                </div>
+                                                <div class="back-box">
+                                                    <ul>
+                                                        <li><a title="ลืมชื่อผู้ใช้">ลืมชื่อผู้ใช้ ?</a></li>
+                                                        <li><a title="ลืมรหัสผ่าน">ลืมรหัสผ่าน ?</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>     
+                </div>
+        </div>
+        <div class="modal fade" id="myRegis" role="dialog">
+                <div class="modal-dialog">
+                        <div class="el-dialog__body">
+                                <div class="loading-bg" style="display: none;">
+                                    <div class="loader"></div>
+                                </div>
+                                <div class="close-wrapper">
+                                    <button type="button" class="style01-close" data-dismiss="modal"></button>
+                                </div>
+                                <div class="popup-style01">
+                                    <div class="popup-style01-bg">
+                                        <div class="popup-signup-block">
+                                            <div>
+                                                <div class="header-title">
+                                                    <h1>สมัคร</h1></div>
+                                                <!---->
+                                                <!---->
+                                            </div>
+                                            <div>
+                                                <form name="signupbaseform" novalidate="novalidate">
+                                                    <div class="el-row" style="margin-left: -15px; margin-right: -15px;">
+                                                        <div class="el-col el-col-24 el-col-sm-12" style="padding-left: 15px; padding-right: 15px;">
+                                                            <div class="user-symbol">
+                                                                <div>
+                                                                    <div class="form-group">
+                                                                        <h4>ยูสเซอร์<span></span><div class="plus-button" style="display: none;">＋</div></h4>
+                                                                        <div class="input-block">
+                                                                            <div class="input-group">
+                                                                                <!---->
+                                                                                <input name="username" maxlength="16" class="form-input" aria-required="true" aria-invalid="false" autocomplete="off" placeholder="ภาษาอังกฤษ หรือ ตัวเลข 5-16 ตัว">
+                                                                                <!---->
+                                                                            </div>
+                                                                            <div>
+                                                                                <div>
+                                                                                    <div class="poperrorMsg" style="display: none;">ต้องการไอดี</div>
+                                                                                    <div class="poperrorMsg" style="display: none;">ภาษาอังกฤษ หรือ ตัวเลข 5-16 ตัว</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!---->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="el-col el-col-24 el-col-sm-12" style="padding-left: 15px; padding-right: 15px;">
+                                                            <div>
+                                                                <div class="form-group">
+                                                                    <h4>รหัสผ่าน<span></span><div class="plus-button" style="display: none;">＋</div></h4>
+                                                                    <div class="input-block">
+                                                                        <div class="input-group">
+                                                                            <!---->
+                                                                            <input name="pwd" maxlength="12" class="form-input" aria-required="true" aria-invalid="false" type="password" autocomplete="off" placeholder="ภาษาอังกฤษกับตัวเลข 6-12 ตัว">
+                                                                            <!---->
+                                                                        </div>
+                                                                        <div>
+                                                                            <div>
+                                                                                <div class="poperrorMsg" style="display: none;">ต้องการรหัสผ่าน</div>
+                                                                                <div class="poperrorMsg" style="display: none;">ภาษาอังกฤษกับตัวเลข 6-12 ตัว</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!---->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="el-col el-col-24 el-col-sm-12" style="padding-left: 15px; padding-right: 15px;">
+                                                            <div>
+                                                                <div class="form-group">
+                                                                    <h4>ยืนยันรหัสผ่าน<span></span><div class="plus-button" style="display: none;">＋</div></h4>
+                                                                    <div class="input-block">
+                                                                        <div class="input-group">
+                                                                            <!---->
+                                                                            <input name="pwdConfirm" maxlength="12" class="form-input" aria-required="true" aria-invalid="false" type="password" autocomplete="off" placeholder="ภาษาอังกฤษ และ ตัวเลข 6-12 ตัว">
+                                                                            <!---->
+                                                                        </div>
+                                                                        <div>
+                                                                            <div>
+                                                                                <div class="poperrorMsg" style="display: none;">ต้องการการยืนยันรหัสผ่าน</div>
+                                                                                <div class="poperrorMsg" style="display: none;">ภาษาอังกฤษกับตัวเลข 6-12 ตัว</div>
+                                                                                <div class="poperrorMsg" style="display: none;">รหัสผ่านไม่ถูกต้อง</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!---->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="el-col el-col-24 el-col-sm-12" style="padding-left: 15px; padding-right: 15px;">
+                                                            <div>
+                                                                <div class="form-group">
+                                                                    <h4>เบอร์โทรศัพท์มือถือ<span></span><div class="plus-button" style="display: none;">＋</div></h4>
+                                                                    <div class="input-block">
+                                                                        <div class="input-group">
+                                                                            <!---->
+                                                                            <input name="phoneNumber" maxlength="10" class="form-input" aria-required="true" aria-invalid="false" type="tel" autocomplete="off" placeholder="เช่น: 0812345678">
+                                                                            <!---->
+                                                                        </div>
+                                                                        <div>
+                                                                            <div>
+                                                                                <div class="poperrorMsg" style="display: none;">ต้องการเบอร์โทรศัพท์มือถือ</div>
+                                                                                <div class="poperrorMsg" style="display: none;">กรุณาใส่เบอร์โทรศัพท์มือถือที่ถูกต้อง</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!---->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="el-col el-col-24 el-col-sm-12" style="padding-left: 15px; padding-right: 15px; display: none;">
+                                                            <div>
+                                                                <!---->
+                                                            </div>
+                                                        </div>
+                                                        <div class="el-col el-col-24 el-col-sm-12" style="padding-left: 15px; padding-right: 15px;">
+                                                            <div>
+                                                                <div class="form-group">
+                                                                    <h4>ธนาคาร<span></span></h4>
+                                                                    <div class="input-block">
+                                                                        <div class="input-group">
+                                                                            <!---->
+                                                                            <div>
+                                                                                <div style="position: absolute; width: 100%; height: 100%;"></div>
+                                                                                <input name="bankName" placeholder="กรุณาเลือกธนาคาร" autocomplete="off" class="form-input" aria-required="true" aria-invalid="false">
+                                                                            </div>
+                                                                            <!---->
+                                                                        </div>
+                                                                        <div>
+                                                                            <div>
+                                                                                <div class="poperrorMsg" style="display: none;">ต้องการ</div>
+                                                                                <div class="poperrorMsg" style="display: none;">ผิดพลาด</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!---->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="el-col el-col-24 el-col-sm-12" style="padding-left: 15px; padding-right: 15px;">
+                                                            <div>
+                                                                <div class="form-group">
+                                                                    <h4>เลขที่บัญชีธนาคาร<span></span></h4>
+                                                                    <div class="input-block">
+                                                                        <div class="input-group">
+                                                                            <!---->
+                                                                            <div max="12">
+                                                                                <input name="bankAccount" placeholder="เช่น: 1234567890" type="tel" maxlength="14" autocomplete="off" class="form-input" aria-required="true" aria-invalid="false">
+                                                                            </div>
+                                                                            <!---->
+                                                                        </div>
+                                                                        <div>
+                                                                            <div>
+                                                                                <div class="poperrorMsg" style="display: none;">ต้องการ</div>
+                                                                                <div class="poperrorMsg" style="display: none;">กรุณากรอกบัญชีธนาคารที่ถูกต้อง</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!---->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="el-col el-col-24 el-col-sm-12" style="padding-left: 15px; padding-right: 15px;">
+                                                            <div>
+                                                                <div class="form-group">
+                                                                    <h4>ชื่อบัญชีธนาคาร<span></span><div class="plus-button" style="display: none;">＋</div></h4>
+                                                                    <div class="input-block">
+                                                                        <div class="input-group">
+                                                                            <!---->
+                                                                            <input name="bankAccountName" maxlength="60" class="form-input" aria-required="true" aria-invalid="false" placeholder="กรุณาระบุชื่อบัญชีธนาคาร" autocomplete="off">
+                                                                            <!---->
+                                                                        </div>
+                                                                        <div>
+                                                                            <div>
+                                                                                <div class="poperrorMsg" style="display: none;">ต้องการ</div>
+                                                                                <div class="poperrorMsg" style="display: none;">ชื่อ นามสกุล จำเป็นต้องกรอก</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!---->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="el-col el-col-24 el-col-sm-12" style="padding-left: 15px; padding-right: 15px;">
+                                                            <div class="qrcode-box">
+                                                                <div>
+                                                                    <div class="form-group">
+                                                                        <h4>รหัสยืนยัน<span></span><div class="plus-button" style="display: none;">＋</div></h4>
+                                                                        <div class="input-block">
+                                                                            <div class="input-group">
+                                                                                <!---->
+                                                                                <input name="captcha" maxlength="4" class="form-input" aria-required="true" aria-invalid="false" type="tel" placeholder="กรุณาใส่รหัสยืนยัน" autocomplete="off">
+                                                                                <div class="input-addon checknum_img">
+                                                                                    <div><img src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAeCAMAAADthUvBAAAAGFBMVEXp6enyBw4AAAAAAAAAAAAAAAAAAAAAAAAvCd45AAAACHRSTlP//wAAAAAAAAOaHncAAAvhSURBVHjaAdYLKfQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEBAQEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAAAAAAAAAAAAAEBAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAABAQEBAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAQEBAQEBAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAABAQEBAAABAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQAAAAAAAAAAAAAAAAAAAAEBAQEAAAEBAQEAAAAAAAAAAAAAAAAAAAAAAAABAQEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEAAAAAAAAAAAAAAAAAAAAAAQEBAQAAAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAEBAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEBAAAAAAAAAAAAAAABAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEBAAAAAAAAAAAAAAAAAAAAAAABAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEBAQEBAQAAAAAAAAABAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAEBAQEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEAAAAAAAEBAAAAAAAAAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAEBAAAAAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAEBAQABAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQAAAAAAAAAAAQEAAAEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEAAAAAAAAAAAAAAAAAAAAAAQEBAAEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAABAQABAQEBAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQAAAQEBAQAAAAAAAAAAAAAAAAAAAAABAQEAAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAEBAAEBAQEBAQEBAQEBAQEAAAAAAAAAAAAAAAAAAAABAQEBAAABAQEBAAAAAAAAAAAAAAAAAAAAAQEBAAABAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQAAAAAAAAABAQEAAAAAAAAAAAAAAQEBAQAAAAAAAAAAAAAAAAAAAAEBAQEAAAEBAQEAAAAAAAAAAAAAAAAAAAABAQEAAAEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQAAAAABAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQAAAQEBAQAAAAAAAAAAAAAAAAAAAAEBAQAAAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEBAQEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEBAAABAQEBAAAAAAAAAAAAAAAAAAABAQEAAAABAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEBAAABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEBAQEBAQEAAAAAAAAAAAAAAAAAAAEBAQEBAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEBAQEBAAAAAAAAAAAAAAAAAAAAAQEBAQEBAQEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEBAQAAAAAAAAAAAAAAAAAAAAABAQEBAQEBAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEBAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMugG8QKgJ/wAAAABJRU5ErkJggg=="></div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div>
+                                                                                <div>
+                                                                                    <div class="poperrorMsg" style="display: none;">ต้องการรหัสยืนยัน</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!---->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div style="width: 100%;">
+                                                            <div class="el-col el-col-24 el-col-sm-12" style="padding-left: 15px; padding-right: 15px;">
+                                                                <div>
+                                                                    <div class="form-group">
+                                                                        <h4>บุคคลอ้างอิง<!----><div class="plus-button">＋</div></h4>
+                                                                        <div class="input-block">
+                                                                            <div class="input-group">
+                                                                                <!---->
+                                                                                <input name="parentUsername" maxlength="16" class="form-input" aria-required="false" aria-invalid="false" autocomplete="off" placeholder="กรุณาใส่ ยูสเซอร์ คนที่แนะนำท่าน (ถ้ามี)" style="display: none;">
+                                                                                <!---->
+                                                                            </div>
+                                                                            <div>
+                                                                                <div>
+                                                                                    <div class="poperrorMsg" style="display: none;"></div>
+                                                                                    <div class="poperrorMsg" style="display: none;">บัญชีผู้แนะนำต้องมีอักษรและตัวเลข5-16 ตัว</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!---->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="el-col el-col-24 el-col-sm-12" style="padding-left: 15px; padding-right: 15px;">
+                                                                <div class="form-group">
+                                                                    <h4>โค้ดโปรโมชั่น<div class="plus-button">＋</div></h4>
+                                                                    <div class="input-group" style="display: none;">
+                                                                        <input placeholder="กรุณาใส่โค้ดโปรโมชั่น" class="form-input">
+                                                                    </div>
+                                                                    <div>
+                                                                        <div class="poperrorMsg" style="display: none;">โค้ดหมดอายุ</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <div class="submitbtn-wrap">
+                                                    <button><span>ลงทะเบียน</span></button>
+                                                </div>
+                                                <div class="back-box"><a href="javascript:void(0)" title="กลับหน้าล็อกอิน">กลับหน้าล็อกอิน</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                </div>
+        </div>
+            <div class="modal fade" id="myGame" role="dialog">  
+                    <div class="el-dialog__body">
+                            <div class="loading-bg" style="display: none;">
+                                <div class="loader"></div>
+                            </div>
+                            <div class="close-wrapper">
+                                <button type="button" class="gameopen-close" data-dismiss="modal"></button>
+                            </div>
+                            <div class="gameopenStyle">
+                                <div class="gameopenStyle-bg">
+                                    <div class="popup-gameopen-block">
+                                        <div>
+                                            <!---->
+                                            <!---->
+                                            <!---->
+                                        </div>
+                                        <div class="gameopen-wrapper">
+                                            <div class="game-img">
+                                                <div class="game-brand" id="gameBrand">JDB</div><img alt="God of Fortune" id="gameImg" data-src="https://download.ocms365.com/v2/common/JDB/PlatformGameList.7003.4?version=1528947971" src="https://download.ocms365.com/v2/common/JDB/PlatformGameList.7003.4?version=1528947971" lazy="loaded" lazy-progressive="true"></div>
+                                            <div class="game-detail">
+                                                <div class="game-name" id="gameName">God of Fortune</div>
+                                                <div class="game-info">
+                                                    <!---->
+                                                    <div class="play-count" id="gameCount"><i></i><span>147230</span></div>
+                                                </div>
+                                                <!---->
+                                                <div class="game-btn">
+                                                    <div class="btn-play"><a id="gamePlay" title="PLAY REAL"><i class="fa" style="font-size: 20px;"></i><span>PLAY REAL</span></a></div>
+                                                    <!---->
+                                                    <div class="btn-demo"><a id="gameDemo" title="DEMO"><i class="fa" style="font-size: 20px;"></i><span>DEMO</span></a></div>
+                                                    <div class="btn-play btn-download">
+                                                        <a id="gameLoad"><img lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/common-icon/download-icon.png?version=1585439631184.2705262" src="https://download.ocms365.com/v2/SB0/images/common-icon/download-icon.png?version=1585439631184.2705262" lazy="loaded"><span>Download APP</span></a>
+                                                    </div>
+                                                </div>
+                                                <!---->
+                                                <div class="game-close-btn" data-dismiss="modal">ยกเลิก</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+    </div>
+            <div id="app">
+                <div class="headerPosChange headerHeightChange">
+                    <header>
+                        <div class="web_view">
+                            <div class="header-top">
+                                <div class="container-fluid">
+                                    <div class="logo"><a href="index.html" class="router-link-exact-active router-link-active" title="Index"><img alt="Logo" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/logo.png?version=1584395524001.80625037" src="https://download.ocms365.com/v2/SB0/images/logo.png?version=1584395524001.80625037" lazy="loaded"></a></div>
+                                    <div class="lang-link">
+                                        <div class="lang-arrow">
+                                            <div class="lang-img"><img alt="flag" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/header/flag/th.png?version=1584395523994.8057800" src="https://download.ocms365.com/v2/SB0/images/header/flag/th.png?version=1584395523994.8057800" src="https://download.ocms365.com/v2/SB0/images/header/flag/th.s.png?version=1584395523994.8057800" lazy="loading"></div><span class="el-icon-arrow-down"></span></div>
+                                        <div class="dropdown-lang">
+                                            <ul>
+                                                <li>
+                                                    <a title="English">
+                                                        <div class="lang-img"><img alt="flag" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/header/flag/en.png?version=1584395523993.80545629" src="https://download.ocms365.com/v2/SB0/images/header/flag/en.s.png?version=1584395523993.80545629" lazy="loading"></div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a title="ภาษาไทย">
+                                                        <div class="lang-img"><img alt="flag" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/header/flag/th.png?version=1584395523994.8057800" src="https://download.ocms365.com/v2/SB0/images/header/flag/th.s.png?version=1584395523994.8057800" lazy="loading"></div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="login-box">
+                                        <div class="login-before">
+                                            <ul>
+                                                <li class="login-btn" data-toggle="modal" data-target="#myLogin"><a title="เข้าสู่ระบบ">เข้าสู่ระบบ</a></li>
+                                                <li class="register-btn" data-toggle="modal" data-target="#myRegis"><a title="สมัครสมาชิก">สมัครสมาชิก</a></li>
+                                                <!---->
+                                            </ul>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-bottom">
+                                <div class="container-fluid">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="sportgame.html" class="" title="กีฬา"><i class="sportgame-btn"><img alt="กีฬา" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/header/sportgame-btn.png?version=1584395523994.8057994" src="https://download.ocms365.com/v2/SB0/images/header/sportgame-btn.s.png?version=1584395523994.8057994" lazy="loading"></i>กีฬา</a></li>
+                                            <li><a href="casino.html" class="" title="คาสิโน"><i class="othergame-btn"><img alt="คาสิโน" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/header/othergame-btn.png?version=1584395523994.8057881" src="https://download.ocms365.com/v2/SB0/images/header/othergame-btn.s.png?version=1584395523994.8057881" lazy="loading"></i>คาสิโน</a></li>
+                                            <li><a href="othergame.html" class="" title="เกมส์"><i class="othergame-btn"><img alt="เกมส์" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/header/slotgame-btn.png?version=1584395523994.80571002" src="https://download.ocms365.com/v2/SB0/images/header/slotgame-btn.s.png?version=1584395523994.80571002" lazy="loading"></i>เกมส์</a></li>
+                                            <li><a href="promote.html" class="" title="โปรโมชั่น"><i class="promote-btn"><img alt="โปรโมชั่น" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/header/promote-btn.png?version=1584395523994.8057720" src="https://download.ocms365.com/v2/SB0/images/header/promote-btn.s.png?version=1584395523994.8057720" lazy="loading"></i>โปรโมชั่น</a></li>
+                                            <li><a href="article.html" class="" title="บทความ"><i class="article-btn"><img alt="บทความ" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/header/article-btn.png?version=1584395523991.8054761" src="https://download.ocms365.com/v2/SB0/images/header/article-btn.s.png?version=1584395523991.8054761" lazy="loading"></i>บทความ</a></li>
+                                        </ul>
+                                    </nav>
+                                    <div class="line"><span></span></div>
+                                    <div class="float-banner-wrapper">
+                                        <div class="menu-button close"><i class="fa fa-ellipsis-v"></i></div>
+                                        <ul style="display: none;">
+                                            <li>
+                                                <a title="ข่าวล่ามาแรง">
+                                                    <div class="news-icon"><img alt="ข่าวล่ามาแรง" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/floatbutton/note-icon.png?version=1549924369112.5881377" src="https://download.ocms365.com/v2/SB0/images/floatbutton/note-icon.s.png?version=1549924369112.5881377" lazy="loading"></div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="ดาวน์โหลด APP"><img alt="ดาวน์โหลด APP" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/floatbutton/app-icon.png?version=1549924369112.5881345" src="https://download.ocms365.com/v2/SB0/images/floatbutton/app-icon.s.png?version=1549924369112.5881345" lazy="loading"></a>
+                                            </li>
+                                            <li>
+                                                <a title="Line"><img alt="Line" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/floatbutton/line-icon.png?version=1549924369112.5881683" src="https://download.ocms365.com/v2/SB0/images/floatbutton/line-icon.s.png?version=1549924369112.5881683" lazy="loading"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mob_view mob_header"><nav class="navbar-header"><button onclick="myMenu()" type="button" class="nav-icon"><span></span><span></span><span></span></button><div class="mob-home"><a href="index.html" class="router-link-exact-active router-link-active" title="Index"><img alt="Index" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/floatbutton/home-icon.png?version=1573695384933.7451607" src="https://download.ocms365.com/v2/SB0/images/floatbutton/home-icon.png?version=1573695384933.7451607" lazy="loaded"></a></div><div class="logo"><a href="index.html" class="router-link-exact-active router-link-active" title="Index"><img alt="Logo" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/logo.png?version=1584395524001.80625037" src="https://download.ocms365.com/v2/SB0/images/logo.png?version=1584395524001.80625037" lazy="loaded"></a></div><div class="line-icon"><a title="Line"><img alt="Line" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/floatbutton/line-icon.png?version=1549924369112.5881683" src="https://download.ocms365.com/v2/SB0/images/floatbutton/line-icon.png?version=1549924369112.5881683" lazy="loaded"></a></div><div class="mob-news"><a title="ข่าวล่ามาแรง"><div class="news-icon"><img alt="ข่าวล่ามาแรง" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/floatbutton/note-icon.png?version=1549924369112.5881377" src="https://download.ocms365.com/v2/SB0/images/floatbutton/note-icon.png?version=1549924369112.5881377" lazy="loaded"></div></a></div></nav><div class="mob-login"><div class="mob-before"><ul><li><div class="login-btn" data-toggle="modal" data-target="#myLogin"><a href="javascript:void(0)" title="เข้าสู่ระบบ" class="js_modal">เข้าสู่ระบบ</a></div></li><li><div class="register-btn" data-toggle="modal" data-target="#myRegis"><a href="javascript:void(0)" title="สมัครสมาชิก" class="js_modal">สมัครสมาชิก</a></div></li><!----></ul></div></div></div>
+                    </header>
+                    <!---->
+                    <!---->
+                    <div class="mob-menubar" id="myMenu" style="display: none;">
+                        <div class="nav-item">
+                            <ul>
+                                <li class="lang-item">
+                                    <div role="tablist" aria-multiselectable="true" class="el-collapse">
+                                        <div class="el-collapse-item">
+                                            <div role="tab" aria-controls="el-collapse-content-3711" aria-describedby="el-collapse-content-3711">
+                                                <div role="button" id="el-collapse-head-3711" tabindex="0" class="el-collapse-item__header"><i class="el-collapse-item__arrow el-icon-arrow-right"></i>
+                                                    <div class="lang-img"><img alt="flag" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/header/flag/th.png?version=1584395523994.8057800" src="https://download.ocms365.com/v2/SB0/images/header/flag/th.png?version=1584395523994.8057800" src="https://download.ocms365.com/v2/SB0/images/header/flag/th.s.png?version=1584395523994.8057800" lazy="loading"></div><span>ภาษาไทย</span></div>
+                                            </div>
+                                            <div role="tabpanel" aria-hidden="true" aria-labelledby="el-collapse-head-3711" id="el-collapse-content-3711" class="el-collapse-item__wrap" style="display: none;">
+                                                <div class="el-collapse-item__content">
+                                                    <ul class="nav-sub-item">
+                                                        <li>
+                                                            <a href="javascript:void(0)" title="English">
+                                                                <div class="lang-img"><img alt="flag" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/header/flag/en.png?version=1584395523993.80545629" src="https://download.ocms365.com/v2/SB0/images/header/flag/en.s.png?version=1584395523993.80545629" lazy="loading"></div><span>English</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)" title="ภาษาไทย">
+                                                                <div class="lang-img"><img alt="flag" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/header/flag/th.png?version=1584395523994.8057800" src="https://download.ocms365.com/v2/SB0/images/header/flag/th.s.png?version=1584395523994.8057800" lazy="loading"></div><span>ภาษาไทย</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="promote.html" class="" title="โปรโมชั่น">โปรโมชั่น</a></li>
+                                <li><a href="article.html" class="" title="บทความ">บทความ</a></li>
+                                <li>
+                                    <div role="tablist" aria-multiselectable="true" class="el-collapse">
+                                        <div class="el-collapse-item is-active">
+                                            <div role="tab" aria-expanded="true" aria-controls="el-collapse-content-6467" aria-describedby="el-collapse-content-6467">
+                                                <div role="button" id="el-collapse-head-6467" tabindex="0" class="el-collapse-item__header is-active"><i class="el-collapse-item__arrow el-icon-arrow-right is-active"></i>อื่นๆ</div>
+                                            </div>
+                                            <div role="tabpanel" aria-labelledby="el-collapse-head-6467" id="el-collapse-content-6467" class="el-collapse-item__wrap">
+                                                <div class="el-collapse-item__content">
+                                                    <ul class="nav-sub-item">
+                                                        <li><a href="aboutus.html" class="" title="เกี่ยวกับเรา">เกี่ยวกับเรา</a></li>
+                                                        <li><a href="guide.html" class="" title="คู่มือผู้ใช้">คู่มือผู้ใช้</a></li>
+                                                        <li><a href="qa.html" class="" title="คำถามที่พบบ่อย">คำถามที่พบบ่อย</a></li>
+                                                        <li><a href="paymethod.html" class="" title="วิธีการชำระเงิน">วิธีการชำระเงิน</a></li>
+                                                        <li><a href="servicestate.html" class="" title="กฏการเดิมพัน">กฏการเดิมพัน</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="index-content-wrapper">
+                    <div class="othergame-wrapper">
+                        <div class="gametab-wrapper">
+                            <div class="swiper-position">
+                                <div class="swiper-container slick-gametab swiper-container-initialized swiper-container-horizontal swiper-container-free-mode">
+                                    <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                                        <div onclick="selectGame(this)" class="gametab swiper-slide nav-active swiper-slide-active">
+                                            <a title="สล็อด">
+                                                <div class="gameTabIcon"><img alt="สล็อด" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/othergame/slot-games.png?version=1584395524021.80741498" src="https://download.ocms365.com/v2/SB0/images/othergame/slot-games.png?version=1584395524021.80741498" lazy="loaded"></div><span>สล็อด</span></a>
+                                        </div>
+                                        <div onclick="selectGame(this)" class="gametab swiper-slide swiper-slide-next">
+                                            <a title="ยิงปลา">
+                                                <div class="gameTabIcon"><img alt="ยิงปลา" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/othergame/fisher-games.png?version=1584395524021.80742332" src="https://download.ocms365.com/v2/SB0/images/othergame/fisher-games.png?version=1584395524021.80742332" lazy="loaded"></div><span>ยิงปลา</span></a>
+                                        </div>
+                                        <div onclick="selectGame(this)" class="gametab swiper-slide">
+                                            <a title="เกมอาร์เคด">
+                                                <div class="gameTabIcon"><img alt="เกมอาร์เคด" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/othergame/arcade-games.png?version=1584395524020.80741398" src="https://download.ocms365.com/v2/SB0/images/othergame/arcade-games.png?version=1584395524020.80741398" lazy="loaded"></div><span>เกมอาร์เคด</span></a>
+                                        </div>
+                                        <div onclick="selectGame(this)" class="gametab swiper-slide">
+                                            <a title="แอพคาสิโน">
+                                                <div class="gameTabIcon"><img alt="แอพคาสิโน" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/othergame/app-games.png?version=1584395524020.80742650" src="https://download.ocms365.com/v2/SB0/images/othergame/app-games.png?version=1584395524020.80742650" lazy="loaded"></div><span>แอพคาสิโน</span></a>
+                                        </div>
+                                        <div onclick="selectGame(this)" class="gametab swiper-slide">
+                                            <a title="ล็อตเตอรี่">
+                                                <div class="gameTabIcon"><img alt="ล็อตเตอรี่" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/lottery/lottery-games.png?version=1584395524001.80622191" src="https://download.ocms365.com/v2/SB0/images/lottery/lottery-games.png?version=1584395524001.80622191" lazy="loaded"></div><span>ล็อตเตอรี่</span></a>
+                                        </div>
+                                    </div> <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                <div slot="button-prev" class="gametab-prev swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"></div>
+                                <div slot="button-next" class="gametab-next swiper-button-disabled" tabindex="0" role="button" aria-label="Next slide" aria-disabled="true"></div>
+                            </div>
+                        </div>
+                        <div class="slot-branch-container">
+                            <div class="web_view">
+                                <div class="gamebranchtab-wrapper">
+                                    <div class="swiper-position">
+                                        <div class="swiper-container swiper-container-initialized swiper-container-horizontal" style="cursor: grab;">
+                                            <div class="swiper-wrapper" style="transition-duration: 0ms;">
+                                                <div onclick="selectBranch(this)" class="gamebranch swiper-slide nav-active">
+                                                    <a title="ทั้งหมด">
+                                                        <div class="brand-img"><img alt="ทั้งหมด" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/othergame/all.png?version=1584395524019.8074829" src="https://download.ocms365.com/v2/SB0/images/othergame/all.s.png?version=1584395524019.8074829" lazy="loading"></div><span>ทั้งหมด</span></a>
+                                                </div>
+                                                <div onclick="selectBranch(this)" class="gamebranch swiper-slide">
+                                                    <a href="javascript:void(0)" title="JDB">
+                                                        <div class="brand-img"><img alt="JDB" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/Platform.1.4?version=1537854597" src="https://download.ocms365.com/v2/common/Platform.1.4.s?version=1537854597" lazy="loading"></div><span>JDB</span></a>
+                                                </div>
+                                                <div onclick="selectBranch(this)" class="gamebranch swiper-slide">
+                                                    <a href="javascript:void(0)" title="PT">
+                                                        <div class="brand-img"><img alt="PT" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/Platform.2.4?version=1536568643" src="https://download.ocms365.com/v2/common/Platform.2.4.s?version=1536568643" lazy="loading"></div><span>PT</span></a>
+                                                </div>
+                                                <div onclick="selectBranch(this)" class="gamebranch swiper-slide">
+                                                    <a href="javascript:void(0)" title="MG">
+                                                        <div class="brand-img"><img alt="MG" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB5/Platform.51.4?version=0" src="https://download.ocms365.com/v2/SB5/Platform.51.4.s?version=0" lazy="loading"></div><span>MG</span></a>
+                                                </div>
+                                                <div onclick="selectBranch(this)" class="gamebranch swiper-slide">
+                                                    <a href="javascript:void(0)" title="HB">
+                                                        <div class="brand-img"><img alt="HB" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/Platform.15.4?version=1536568699" src="https://download.ocms365.com/v2/common/Platform.15.4.s?version=1536568699" lazy="loading"></div><span>HB</span></a>
+                                                </div>
+                                                <div onclick="selectBranch(this)" class="gamebranch swiper-slide">
+                                                    <a href="javascript:void(0)" title="RT">
+                                                        <div class="brand-img"><img alt="RT" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/Platform.27.4?version=1536717519" src="https://download.ocms365.com/v2/common/Platform.27.4.s?version=1536717519" lazy="loading"></div><span>RT</span></a>
+                                                </div>
+                                            </div> <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                        <div slot="button-prev" class="branchtab-prev swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"></div>
+                                        <div slot="button-next" class="branchtab-next swiper-button-disabled" tabindex="0" role="button" aria-label="Next slide" aria-disabled="true"></div>
+                                    </div>
+                                </div>
+                                <div class="search-bar-wrapper">
+                                    <div class="search-bar">
+                                        <div class="el-select">
+                                            <!---->
+                                            <div class="el-input el-input--suffix">
+                                                <!---->
+                                                <input type="text" readonly="readonly" autocomplete="off" placeholder="กรุณาเลือก" class="el-input__inner">
+                                                <!----><span class="el-input__suffix"><span class="el-input__suffix-inner"><i class="el-select__caret el-input__icon el-icon-arrow-up"></i><!----><!----></span>
+                                                <!---->
+                                                </span>
+                                                <!---->
+                                            </div>
+                                            <div class="el-select-dropdown el-popper" style="display: none;">
+                                                <div class="el-scrollbar" style="">
+                                                    <div class="el-select-dropdown__wrap el-scrollbar__wrap" style="margin-bottom: -15px; margin-right: -15px;">
+                                                        <ul class="el-scrollbar__view el-select-dropdown__list">
+                                                            <!---->
+                                                            <li class="el-select-dropdown__item selected"><span>เกมส์ทั้งหมด</span></li>
+                                                            <li class="el-select-dropdown__item"><span>ยอดนิยม</span></li>
+                                                            <li class="el-select-dropdown__item"><span>เกมใหม่</span></li>
+                                                            <li class="el-select-dropdown__item is-disabled"><span>เกมโปรด</span></li>
+                                                            <li class="el-select-dropdown__item is-disabled"><span>เล่นล่าสุด</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="el-scrollbar__bar is-horizontal">
+                                                        <div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div>
+                                                    </div>
+                                                    <div class="el-scrollbar__bar is-vertical">
+                                                        <div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div>
+                                                    </div>
+                                                </div>
+                                                <!---->
+                                            </div>
+                                        </div>
+                                        <div class="search-input el-input el-input--prefix">
+                                            <!---->
+                                            <input type="text" autocomplete="off" placeholder="กรุณาใส่ชื่อเกมส์" class="el-input__inner"><span class="el-input__prefix"><i class="el-input__icon el-icon-search"></i></span>
+                                            <!---->
+                                            <!---->
+                                        </div><a title="ค้นหาเกมส์" class="searchbtn">ค้นหาเกมส์</a></div>
+                                </div>
+                            </div>
+                            <div class="mob_view">
+                                <div class="mob-gamebranchtab-wrapper">
+                                    <div class="swiper-position">
+                                        <div class="swiper-container mob-gamebranch-tab swiper-container-initialized swiper-container-horizontal swiper-container-free-mode">
+                                            <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                                                <div onclick="selectBranch(this)" class="gamebranch swiper-slide nav-active swiper-slide-active">
+                                                    <a title="ทั้งหมด">
+                                                        <div class="brand-img"><img alt="ทั้งหมด" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/othergame/all.png?version=1584395524019.8074829" src="https://download.ocms365.com/v2/SB0/images/othergame/all.png?version=1584395524019.8074829" lazy="loaded"></div><span>ทั้งหมด</span></a>
+                                                </div>
+                                                <div onclick="selectBranch(this)" class="gamebranch swiper-slide swiper-slide-next">
+                                                    <a href="javascript:void(0)" title="JDB">
+                                                        <div class="brand-img"><img alt="JDB" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/Platform.1.4?version=1537854597" src="https://download.ocms365.com/v2/common/Platform.1.4?version=1537854597" lazy="loaded"></div><span>JDB</span></a>
+                                                </div>
+                                                <div onclick="selectBranch(this)" class="gamebranch swiper-slide">
+                                                    <a href="javascript:void(0)" title="PT">
+                                                        <div class="brand-img"><img alt="PT" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/Platform.2.4?version=1536568643" src="https://download.ocms365.com/v2/common/Platform.2.4?version=1536568643" lazy="loaded"></div><span>PT</span></a>
+                                                </div>
+                                                <div onclick="selectBranch(this)" class="gamebranch swiper-slide">
+                                                    <a href="javascript:void(0)" title="MG">
+                                                        <div class="brand-img"><img alt="MG" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB5/Platform.51.4?version=0" src="https://download.ocms365.com/v2/SB5/Platform.51.4?version=0" lazy="loaded"></div><span>MG</span></a>
+                                                </div>
+                                                <div onclick="selectBranch(this)" class="gamebranch swiper-slide">
+                                                    <a href="javascript:void(0)" title="HB">
+                                                        <div class="brand-img"><img alt="HB" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/Platform.15.4?version=1536568699" src="https://download.ocms365.com/v2/common/Platform.15.4?version=1536568699" lazy="loaded"></div><span>HB</span></a>
+                                                </div>
+                                                <div onclick="selectBranch(this)" class="gamebranch swiper-slide">
+                                                    <a href="javascript:void(0)" title="RT">
+                                                        <div class="brand-img"><img alt="RT" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/Platform.27.4?version=1536717519" src="https://download.ocms365.com/v2/common/Platform.27.4?version=1536717519" lazy="loaded"></div><span>RT</span></a>
+                                                </div>
+                                            </div> <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                        <div slot="button-prev" class="branchtab-prev swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"></div>
+                                        <div slot="button-next" class="branchtab-next swiper-button-disabled" tabindex="0" role="button" aria-label="Next slide" aria-disabled="true"></div>
+                                    </div>
+                                </div>
+                                <ul class="mob-search-bar">
+                                    <div class="swiper-position">
+                                        <div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-free-mode">
+                                            <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                                                <li class="swiper-slide nav-active swiper-slide-active"><a title="ทั้งหมด"><span>ทั้งหมด</span></a></li>
+                                                <li class="swiper-slide swiper-slide-next"><a title="ยอดนิยม"><span>ยอดนิยม</span></a></li>
+                                                <li class="swiper-slide"><a title="เกมใหม่"><span>เกมใหม่</span></a></li>
+                                                <li class="swiper-slide"><a title="เกมโปรด"><span>เกมโปรด</span></a></li>
+                                                <li class="swiper-slide"><a title="เล่นล่าสุด"><span>เล่นล่าสุด</span></a></li>
+                                                <li class="swiper-slide">
+                                                    <div class="el-input el-input--prefix">
+                                                        <!---->
+                                                        <input type="text" autocomplete="off" placeholder="กรุณาใส่ชื่อเกมส์" class="el-input__inner"><span class="el-input__prefix"><i class="el-input__icon el-icon-search"></i></span>
+                                                        <!---->
+                                                        <!---->
+                                                    </div><a title="ค้นหาเกมส์" class="searchbtn">ค้นหาเกมส์</a></li>
+                                            </div> <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="slot-jp-wrapper">
+                            <div class="jackpot-wrapper">
+                                <div class="container-fluid">
+                                    <div class="swiper-position">
+                                        <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+                                            <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                                                <div class="swiper-slide swiper-slide-active" style="width: 1404px;">
+                                                    <ul class="brand-tag">
+                                                        <li class="jackpot-logo"><img alt="jackpot" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/jackpot/logo.png?version=1584395523998.8063268" src="https://download.ocms365.com/v2/SB0/images/jackpot/logo.png?version=1584395523998.8063268" lazy="loaded"></li>
+                                                        <li class="branch-number">
+                                                            <div class="number-title"><img alt="JDB" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/jackpot/jackpot-small-JDB.png?version=1584395523997.80571676" src="https://download.ocms365.com/v2/SB0/images/jackpot/jackpot-small-JDB.png?version=1584395523997.80571676" lazy="loaded"><span>แจ๊กพอตสะสม</span></div>
+                                                            <div class="number">฿ 356,103.71</div><span>/ 300,000 ~ 500,000</span></li>
+                                                    </ul>
+                                                    <ul class="brand-number">
+                                                        <li class="number"><span>รางวัลใหญ่</span><span>฿ 49,639.43</span><span>  / 25,000 ~ 50,000</span></li>
+                                                        <li class="number"><span>รางวัลเล็ก</span><span>฿ 3,248.56</span><span>  / 2,500 ~ 5,000</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="slot-jackpot-prev swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"></div>
+                                            <div class="slot-jackpot-next swiper-button-disabled" tabindex="0" role="button" aria-label="Next slide" aria-disabled="true"></div> <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="container-fluid">
+                            <div class="gamelist-btn-wrapper">
+                                <div class="item">
+                                    <div class="game-block hotgames">
+                                        <div onclick="showGame('SEXY Lobby','https://download.ocms365.com/v2/common/SEXY/PlatformGameList.lobby.4?version=0','','','')" class="game-img"><img alt="Dragon's Luck" class="gameItem" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/RT/PlatformGameList.DragonsLuck.4?version=2" src="https://download.ocms365.com/v2/common/RT/PlatformGameList.DragonsLuck.4?version=2" lazy="loaded"></div>
+                                        <!---->
+                                        <div class="btn-bg">
+                                            <div class="gameopenbtn open-web">
+                                                <div class="btn-play"><a title="PLAY REAL">PLAY REAL</a></div>
+                                                <div class="btn-demo"><a title="DEMO">DEMO</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="brand"><img src="https://download.ocms365.com/v2/common/Platform.27.4?version=1536717519" alt="RT"></div>
+                                        <div class="love-icon"><i class="glyphicon glyphicon-heart"></i></div>
+                                        <!---->
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="game-name">Dragon's Luck</div>
+                                        <div class="play-count"><i class="fa fa-play-circle"></i><span>76747</span></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="game-block hotgames">
+                                        <div onclick="showGame('SEXY Lobby','https://download.ocms365.com/v2/common/SEXY/PlatformGameList.lobby.4?version=0','','','')"  class="game-img"><img alt="SuperNuibi" class="gameItem" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/JDB/PlatformGameList.14036.4?version=0" src="https://download.ocms365.com/v2/common/JDB/PlatformGameList.14036.4?version=0" lazy="loaded"></div>
+                                        <!---->
+                                        <div class="btn-bg">
+                                            <div class="gameopenbtn open-web">
+                                                <div class="btn-play"><a title="PLAY REAL">PLAY REAL</a></div>
+                                                <div class="btn-demo"><a title="DEMO">DEMO</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="brand"><img src="https://download.ocms365.com/v2/common/Platform.1.4?version=1537854597" alt="JDB"></div>
+                                        <div class="love-icon"><i class="glyphicon glyphicon-heart"></i></div>
+                                        <!---->
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="game-name">SuperNuibi</div>
+                                        <div class="play-count"><i class="fa fa-play-circle"></i><span>69616</span></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="game-block hotgames">
+                                        <div onclick="showGame('SEXY Lobby','https://download.ocms365.com/v2/common/SEXY/PlatformGameList.lobby.4?version=0','','','')" class="game-img"><img alt="Moonlight Treasure" class="gameItem" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/JDB/PlatformGameList.8015.4?version=0" src="https://download.ocms365.com/v2/common/JDB/PlatformGameList.8015.4?version=0" lazy="loaded"></div>
+                                        <!---->
+                                        <div class="btn-bg">
+                                            <div class="gameopenbtn open-web">
+                                                <div class="btn-play"><a title="PLAY REAL">PLAY REAL</a></div>
+                                                <div class="btn-demo"><a title="DEMO">DEMO</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="brand"><img src="https://download.ocms365.com/v2/common/Platform.1.4?version=1537854597" alt="JDB"></div>
+                                        <div class="love-icon"><i class="glyphicon glyphicon-heart"></i></div>
+                                        <!---->
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="game-name">Moonlight Treasure</div>
+                                        <div class="play-count"><i class="fa fa-play-circle"></i><span>48560</span></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="game-block hotgames">
+                                        <div onclick="showGame('SEXY Lobby','https://download.ocms365.com/v2/common/SEXY/PlatformGameList.lobby.4?version=0','','','')" class="game-img"><img alt="OpenSesameII" class="gameItem" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/JDB/PlatformGameList.8048.4?version=0" src="https://download.ocms365.com/v2/common/JDB/PlatformGameList.8048.4?version=0" lazy="loaded"></div>
+                                        <!---->
+                                        <div class="btn-bg">
+                                            <div class="gameopenbtn open-web">
+                                                <div class="btn-play"><a title="PLAY REAL">PLAY REAL</a></div>
+                                                <div class="btn-demo"><a title="DEMO">DEMO</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="brand"><img src="https://download.ocms365.com/v2/common/Platform.1.4?version=1537854597" alt="JDB"></div>
+                                        <div class="love-icon"><i class="glyphicon glyphicon-heart"></i></div>
+                                        <!---->
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="game-name">OpenSesameII</div>
+                                        <div class="play-count"><i class="fa fa-play-circle"></i><span>41979</span></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="game-block hotgames">
+                                        <div onclick="showGame('SEXY Lobby','https://download.ocms365.com/v2/common/SEXY/PlatformGameList.lobby.4?version=0','','','')" class="game-img"><img alt="Winning Mask II" class="gameItem" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/JDB/PlatformGameList.8047.4?version=6" src="https://download.ocms365.com/v2/common/JDB/PlatformGameList.8047.4?version=6" lazy="loaded"></div>
+                                        <!---->
+                                        <div class="btn-bg">
+                                            <div class="gameopenbtn open-web">
+                                                <div class="btn-play"><a title="PLAY REAL">PLAY REAL</a></div>
+                                                <div class="btn-demo"><a title="DEMO">DEMO</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="brand"><img src="https://download.ocms365.com/v2/common/Platform.1.4?version=1537854597" alt="JDB"></div>
+                                        <div class="love-icon"><i class="glyphicon glyphicon-heart"></i></div>
+                                        <!---->
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="game-name">Winning Mask II</div>
+                                        <div class="play-count"><i class="fa fa-play-circle"></i><span>29926</span></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="game-block hotgames">
+                                        <div onclick="showGame('SEXY Lobby','https://download.ocms365.com/v2/common/SEXY/PlatformGameList.lobby.4?version=0','','','')" class="game-img"><img alt="GoldFish Gold" class="gameItem" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/JDB/PlatformGameList.8011.4?version=2" src="https://download.ocms365.com/v2/common/JDB/PlatformGameList.8011.4.s?version=2" lazy="loading"></div>
+                                        <!---->
+                                        <div class="btn-bg">
+                                            <div class="gameopenbtn open-web">
+                                                <div class="btn-play"><a title="PLAY REAL">PLAY REAL</a></div>
+                                                <div class="btn-demo"><a title="DEMO">DEMO</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="brand"><img src="https://download.ocms365.com/v2/common/Platform.1.4?version=1537854597" alt="JDB"></div>
+                                        <div class="love-icon"><i class="glyphicon glyphicon-heart"></i></div>
+                                        <!---->
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="game-name">GoldFish Gold</div>
+                                        <div class="play-count"><i class="fa fa-play-circle"></i><span>28417</span></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="game-block hotgames">
+                                        <div onclick="showGame('SEXY Lobby','https://download.ocms365.com/v2/common/SEXY/PlatformGameList.lobby.4?version=0','','','')" class="game-img"><img alt="Golden Dragon" class="gameItem" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/JDB/PlatformGameList.8040.4?version=2" src="https://download.ocms365.com/v2/common/JDB/PlatformGameList.8040.4.s?version=2" lazy="loading"></div>
+                                        <!---->
+                                        <div class="btn-bg">
+                                            <div class="gameopenbtn open-web">
+                                                <div class="btn-play"><a title="PLAY REAL">PLAY REAL</a></div>
+                                                <div class="btn-demo"><a title="DEMO">DEMO</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="brand"><img src="https://download.ocms365.com/v2/common/Platform.1.4?version=1537854597" alt="JDB"></div>
+                                        <div class="love-icon"><i class="glyphicon glyphicon-heart"></i></div>
+                                        <!---->
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="game-name">Golden Dragon</div>
+                                        <div class="play-count"><i class="fa fa-play-circle"></i><span>26071</span></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="game-block hotgames">
+                                        <div onclick="showGame('SEXY Lobby','https://download.ocms365.com/v2/common/SEXY/PlatformGameList.lobby.4?version=0','','','')" class="game-img"><img alt="Open Sesame" class="gameItem" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/JDB/PlatformGameList.8020.4?version=1" src="https://download.ocms365.com/v2/common/JDB/PlatformGameList.8020.4.s?version=1" lazy="loading"></div>
+                                        <!---->
+                                        <div class="btn-bg">
+                                            <div class="gameopenbtn open-web">
+                                                <div class="btn-play"><a title="PLAY REAL">PLAY REAL</a></div>
+                                                <div class="btn-demo"><a title="DEMO">DEMO</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="brand"><img src="https://download.ocms365.com/v2/common/Platform.1.4?version=1537854597" alt="JDB"></div>
+                                        <div class="love-icon"><i class="glyphicon glyphicon-heart"></i></div>
+                                        <!---->
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="game-name">Open Sesame</div>
+                                        <div class="play-count"><i class="fa fa-play-circle"></i><span>21202</span></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="game-block hotgames">
+                                        <div onclick="showGame('SEXY Lobby','https://download.ocms365.com/v2/common/SEXY/PlatformGameList.lobby.4?version=0','','','')" class="game-img"><img alt="Lucky dragon" class="gameItem" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/JDB/PlatformGameList.8001.4?version=0" src="https://download.ocms365.com/v2/common/JDB/PlatformGameList.8001.4.s?version=0" lazy="loading"></div>
+                                        <!---->
+                                        <div class="btn-bg">
+                                            <div class="gameopenbtn open-web">
+                                                <div class="btn-play"><a title="PLAY REAL">PLAY REAL</a></div>
+                                                <div class="btn-demo"><a title="DEMO">DEMO</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="brand"><img src="https://download.ocms365.com/v2/common/Platform.1.4?version=1537854597" alt="JDB"></div>
+                                        <div class="love-icon"><i class="glyphicon glyphicon-heart"></i></div>
+                                        <!---->
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="game-name">Lucky dragon</div>
+                                        <div class="play-count"><i class="fa fa-play-circle"></i><span>19762</span></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="game-block hotgames">
+                                        <div onclick="showGame('SEXY Lobby','https://download.ocms365.com/v2/common/SEXY/PlatformGameList.lobby.4?version=0','','','')" class="game-img"><img alt="God Of Wealth" class="gameItem" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/RT/PlatformGameList.GodOfWealth.4?version=2" src="https://download.ocms365.com/v2/common/RT/PlatformGameList.GodOfWealth.4.s?version=2" lazy="loading"></div>
+                                        <!---->
+                                        <div class="btn-bg">
+                                            <div class="gameopenbtn open-web">
+                                                <div class="btn-play"><a title="PLAY REAL">PLAY REAL</a></div>
+                                                <div class="btn-demo"><a title="DEMO">DEMO</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="brand"><img src="https://download.ocms365.com/v2/common/Platform.27.4?version=1536717519" alt="RT"></div>
+                                        <div class="love-icon"><i class="glyphicon glyphicon-heart"></i></div>
+                                        <!---->
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="game-name">God Of Wealth</div>
+                                        <div class="play-count"><i class="fa fa-play-circle"></i><span>18077</span></div>
+                                    </div>
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="web_view">
+                    <div class="container-mid">
+                        <ul class="footer-grid">
+                            <li>
+                                <h4>ข้อมูล</h4>
+                                <ul class="footer_nav">
+                                    <li><a href="aboutus.html" class="" title="เกี่ยวกับเรา">เกี่ยวกับเรา</a></li>
+                                    <li><a href="guide.html" class="" title="คู่มือผู้ใช้">คู่มือผู้ใช้</a></li>
+                                    <li><a href="qa.html" class="" title="คำถามที่พบบ่อย">คำถามที่พบบ่อย</a></li>
+                                    <li><a href="paymethod.html" class="" title="วิธีการชำระเงิน">วิธีการชำระเงิน</a></li>
+                                    <li><a href="servicestate.html" class="" title="กฏการเดิมพัน">กฏการเดิมพัน</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>เชื่อมต่อ</h4>
+                                <ul class="footer_nav">
+                                    <li><a title="ดาวน์โหลด APP">ดาวน์โหลด APP</a></li>
+                                    <li><a href="HowtoDeposit.html" class="" title="ฝาก">ฝาก</a></li>
+                                    <li><a href="HowtoWithdraw.html" class="" title="ถอน">ถอน</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>ติดต่อเรา</h4>
+                                <ul class="footer_nav">
+                                    <li>
+                                        <a title="คลิก"><img alt="Line" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/footer/footer-line.png?version=1549924369113.5881459" src="https://download.ocms365.com/v2/SB0/images/footer/footer-line.png?version=1549924369113.5881459" lazy="loaded">คลิก</a>
+                                    </li>
+                                    <li><img alt="บริการตลอด 24 ชั่วโมง" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/footer/footer-24h.png?version=1549924369113.5881543" src="https://download.ocms365.com/v2/SB0/images/footer/footer-24h.png?version=1549924369113.5881543" lazy="loaded">(+66) 086-399-9995</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>ผู้ให้บริการเกม</h4>
+                                <ul class="footer_sponsor">
+                                    <li><img alt="JDB" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/Platform.1.4?version=1537854597" src="https://download.ocms365.com/v2/common/Platform.1.4?version=1537854597" lazy="loaded"></li>
+                                    <li><img alt="PT" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/Platform.2.4?version=1536568643" src="https://download.ocms365.com/v2/common/Platform.2.4?version=1536568643" lazy="loaded"></li>
+                                    <li><img alt="UG" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/Platform.8.4?version=1536568726" src="https://download.ocms365.com/v2/common/Platform.8.4?version=1536568726" lazy="loaded"></li>
+                                    <li><img alt="SA" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/Platform.11.4?version=1536568688" src="https://download.ocms365.com/v2/common/Platform.11.4?version=1536568688" lazy="loaded"></li>
+                                    <li><img alt="HB" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/Platform.15.4?version=1536568699" src="https://download.ocms365.com/v2/common/Platform.15.4?version=1536568699" lazy="loaded"></li>
+                                    <li><img alt="SEXY" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/Platform.22.4?version=1536568714" src="https://download.ocms365.com/v2/common/Platform.22.4?version=1536568714" lazy="loaded"></li>
+                                    <li><img alt="AG" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/Platform.23.4?version=1537499549" src="https://download.ocms365.com/v2/common/Platform.23.4?version=1537499549" lazy="loaded"></li>
+                                    <li><img alt="IGK" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/Platform.26.4?version=0" src="https://download.ocms365.com/v2/common/Platform.26.4?version=0" lazy="loaded"></li>
+                                    <li><img alt="RT" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/Platform.27.4?version=1536717519" src="https://download.ocms365.com/v2/common/Platform.27.4?version=1536717519" lazy="loaded"></li>
+                                    <li><img alt="SBO" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/Platform.29.4?version=0" src="https://download.ocms365.com/v2/common/Platform.29.4?version=0" lazy="loaded"></li>
+                                    <li><img alt="918Kiss" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/Platform.41.4?version=0" src="https://download.ocms365.com/v2/SB0/Platform.41.4?version=0" lazy="loaded"></li>
+                                    <li><img alt="EVO" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB1/Platform.43.4?version=0" src="https://download.ocms365.com/v2/SB1/Platform.43.4?version=0" lazy="loaded"></li>
+                                    <li><img alt="SV" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/Platform.44.4?version=0" src="https://download.ocms365.com/v2/SB0/Platform.44.4?version=0" lazy="loaded"></li>
+                                    <li><img alt="RG" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/Platform.45.4?version=0" src="https://download.ocms365.com/v2/common/Platform.45.4?version=0" lazy="loaded"></li>
+                                    <li><img alt="SVL" lazy-progressive="true" data-src="https://download.ocms365.com/v2/common/Platform.47.4?version=0" src="https://download.ocms365.com/v2/common/Platform.47.4?version=0" lazy="loaded"></li>
+                                    <li><img alt="MG" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB5/Platform.51.4?version=0" src="https://download.ocms365.com/v2/SB5/Platform.51.4?version=0" lazy="loaded"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="copyright">Copyright ? 2020 SPBet99. All rights reserved.</div>
+                </footer>
+                <footer class="mob_view">
+                    <ul class="footer-mob">
+                        <li class=""><a title="ล็อตเตอรี่" href="othergame.html"><i aria-hidden="true" class="home-icon"><img alt="ล็อตเตอรี่" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/footer/lotto-icon.png?version=1572903997227.11083531" src="https://download.ocms365.com/v2/SB0/images/footer/lotto-icon.png?version=1572903997227.11083531" lazy="loaded"></i><p>ล็อตเตอรี่</p></a></li>
+                        <li class=""><a title="กีฬา" href="sportgame.html"><i aria-hidden="true" class="sport-icon"><img alt="กีฬา" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/footer/sport-icon.png?version=1549924369115.5881627" src="https://download.ocms365.com/v2/SB0/images/footer/sport-icon.png?version=1549924369115.5881627" lazy="loaded"></i><p>กีฬา</p></a></li>
+                        <li class=""><a title="คาสิโน" href="casino.html"><i aria-hidden="true" class="promote-icon"><img alt="คาสิโน" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/footer/other-icon.png?version=1549924369114.5881636" src="https://download.ocms365.com/v2/SB0/images/footer/other-icon.png?version=1549924369114.5881636" lazy="loaded"></i><p>คาสิโน</p></a></li>
+                        <li class="router-link-exact-active router-link-active"><a title="เกมส์" href="othergame.html"><i aria-hidden="true" class="other-icon"><img alt="เกมส์" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/footer/slot-icon.png?version=1549924369115.588116576" src="https://download.ocms365.com/v2/SB0/images/footer/slot-icon.png?version=1549924369115.588116576" lazy="loaded"></i><p>เกมส์</p></a></li>
+                        <li class=""><a title="ศูนย์สมาชิก" href="memberhall.html"><i aria-hidden="true" class="service-icon"><img alt="ศูนย์สมาชิก" lazy-progressive="true" data-src="https://download.ocms365.com/v2/SB0/images/footer/member-icon.png?version=1549924369114.5881552" src="https://download.ocms365.com/v2/SB0/images/footer/member-icon.png?version=1549924369114.5881552" lazy="loaded"></i><p>ศูนย์สมาชิก</p></a></li>
+                    </ul>
+                </footer>
+                <!---->
+            </div>
+        </div>
+    </div>
+    
+  <!-- Swiper JS -->
+  <script src="javascripts/swiper.min.js"></script>
+  <script>
+
+var gametab = new Swiper('.gametab-wrapper .swiper-container', {
+  slidesPerView: 'auto',
+});
+
+var gamebranch = new Swiper('.mob-gamebranchtab-wrapper .swiper-container', {
+  slidesPerView: 'auto',
+});
+
+function selectGame(sel){
+    var elems = document.querySelectorAll(".gametab.swiper-slide");
+
+    [].forEach.call(elems, function(el) {
+        el.classList.remove("nav-active");
+    });
+
+    sel.classList.add("nav-active");
+}
+
+function selectBranch(sel){
+    var elems = document.querySelectorAll(".gamebranch.swiper-slide");
+   
+    [].forEach.call(elems, function(el) {
+        el.classList.remove("nav-active");
+    });
+
+    sel.classList.add("nav-active");
+}
+    </script>
+    <script src="plugin/vue.min.js"></script>
+    <script src="plugin/vuex.min.js"></script>
+    <script src="plugin/vue-router.min.js"></script>
+    <script type="text/javascript" async="" src="javascripts/p.js"></script>
+    <script>
+            function showGame(name,img,play,demo,load){
+                $("#gameName").text(name);
+                $("#gameImg").attr("src", img);
+                $("#gamePlay").attr("href", play);
+                $("#gameDemo").attr("href", demo);
+                $("#gameLoad").attr("href", load);
+                $("#myGame").modal();
+            }
+    </script>
+
+    <script>
+        function myMenu() {
+            var x = document.getElementById("myMenu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function(){
+          $(".item").hover(function(){
+                var web_view = $(".web_view").css('display');
+                if(web_view!="none") $(this).find(".btn-bg").css("display", "block");
+                
+            }, function(){
+                var web_view = $(".web_view").css('display');
+                if(web_view!="none") $(this).find(".btn-bg").css("display", "none");
+          });
+        });
+    </script>
+</body>
+</html>
+
+
